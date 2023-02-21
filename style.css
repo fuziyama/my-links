@@ -3,30 +3,55 @@
     padding: 0;
 }
 
+:root {
+    --background-color: #121212;
+    --color-text: white;
+    --background-color-hover: white;
+}
+
+.light-theme {
+    --background-color: white;
+    --color-text: black;
+    --background-color-hover: #b6cccc;
+}
+
 body {
-    background-color: black;
+    background-color: var(--background-color);
     font-family: sans-serif;
 }
 
-img {
+nav {
+    color: var(--color-text);
+    flex: 1;
+    text-align: right;
+    margin-top: 0;
+    
+}
+
+#icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+.avatar {
     border-radius: 50%;
     width: 320px;
     height: 320px;
-    border: 2px solid white;
+    border: 3px solid var(--background-color);
 }
 
-img:hover {
-    border: 2px solid #ff6f3c;
+.avatar:hover {
+    border: 2px solid #4078c0;
 }
 
 h1 {
-    color: white;
+    color: var(--color-text);
     margin-top: 31px;
     margin-bottom: 8px;
 }
 
 p {
-    color: white;
+    color: var(--color-text);
 }
 
 ul {
@@ -38,32 +63,30 @@ li {
     list-style: none; /* Remove as bolinhas da lista*/
 }
 
-.li_class {
-    background-color: #ff6f3c;
+.li {
+    background-color: #4078c0;
     font-weight: bold;
-    color: black;
+    color: var(--color-text);
     padding: 15px;
     text-decoration: none; /* Remove efeitos no texto */
     display: block; /* display como bloco ao invés de linha */
     border-radius: 5px;
 }
 
-.li_class:hover {
-    background-color: white;
-    color: #ff6f3c;
+.li:hover {
+    background-color: var(--background-color-hover);
+    color: #4078c0;
 }
 
-.footer_class {
-    color:white;
+.footer {
+    color:var(--color-text);
     text-decoration: none;
+    display: block;
+    margin-bottom: 18px;
 }
 
-.footer_class:hover {
+.footer:hover {
     font-weight: bold;
-}
-
-footer {
-    color: white;
 }
 
 .container { /* .NOME = indica que é uma classe*/
