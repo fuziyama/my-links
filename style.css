@@ -10,8 +10,12 @@ body {
 
 img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
+    border: 2px solid white;
+}
+
+img:hover {
     border: 2px solid #ff6f3c;
 }
 
@@ -34,7 +38,7 @@ li {
     list-style: none; /* Remove as bolinhas da lista*/
 }
 
-a {
+.li_class {
     background-color: #ff6f3c;
     font-weight: bold;
     color: black;
@@ -44,9 +48,18 @@ a {
     border-radius: 5px;
 }
 
-a:hover {
+.li_class:hover {
     background-color: white;
     color: #ff6f3c;
+}
+
+.footer_class {
+    color:white;
+    text-decoration: none;
+}
+
+.footer_class:hover {
+    font-weight: bold;
 }
 
 footer {
@@ -54,7 +67,7 @@ footer {
 }
 
 .container { /* .NOME = indica que é uma classe*/
-     width: 300px;
+     width: 320px;
      text-align: center;
      margin-top: 41px;
      margin-left: auto; /* centraliza */
